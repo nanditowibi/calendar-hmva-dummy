@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalender Aktivitas | HMVA UI</title>
+  <link rel="stylesheet" href="../styles/calendar.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand">
+        <span>HMVA UI</span>
+        <span class="brand-badge">Vokasi Akuntansi</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">&#9776;</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="../index.html">Beranda</a>
+        <a href="tentang-kami.html">Tentang Kami</a>
+        <a href="pusat-informasi.html">Pusat Informasi</a>
+        <a href="kalender.html" class="active">Kalender</a>
+        <a href="publikasi.html">Publikasi</a>
+        <a href="hmva-care.html" class="btn-care">HMVA Care</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Kalender Aktivitas HMVA UI</h1>
+      <p>Jadwal kegiatan, rapat kerja, seminar, dan agenda kemahasiswaan yang tersinkronisasi langsung dengan Google Calendar resmi HMVA Vokasi UI.</p>
+    </div>
+  </section>
+
+  <!-- KONTEN KALENDER & AGENDA -->
+  <section class="section">
+    <div class="container">
+      <div class="calendar-layout">
+        
+        <!-- KIRI: GRID KALENDER -->
+        <div class="calendar-card">
+          <div class="cal-header">
+            <h2 id="calMonthYear">Bulan Tahun</h2>
+            <div class="cal-controls">
+              <button class="cal-btn" id="prevMonthBtn">&larr;</button>
+              <button class="cal-btn" id="todayBtn">Hari Ini</button>
+              <button class="cal-btn" id="nextMonthBtn">&rarr;</button>
+            </div>
+          </div>
+
+          <div class="cal-weekdays">
+            <div>Min</div>
+            <div>Sen</div>
+            <div>Sel</div>
+            <div>Rab</div>
+            <div>Kam</div>
+            <div>Jum</div>
+            <div>Sab</div>
+          </div>
+
+          <div class="cal-days" id="calDays"></div>
+        </div>
+
+        <!-- KANAN: DAFTAR AGENDA -->
+        <div class="agenda-card">
+          <div class="agenda-header">
+            <h3 id="agendaHeading">Agenda Bulan Ini</h3>
+            <button class="btn-reset-filter" id="resetFilterBtn" style="display:none;">Lihat Semua</button>
+          </div>
+          <div class="agenda-list" id="agendaList"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>HMVA Vokasi UI</h3>
+          <p>Himpunan Mahasiswa Vokasi Akuntansi Universitas Indonesia. Gedung Program Pendidikan Vokasi UI, Kampus UI Depok, Jawa Barat.</p>
+        </div>
+        <div>
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="tentang-kami.html">Tentang Kami & SAI</a></li>
+            <li><a href="pusat-informasi.html">Pusat Informasi</a></li>
+            <li><a href="kalender.html">Kalender Aktivitas</a></li>
+            <li><a href="publikasi.html">Friday Fact & Infopreneur</a></li>
+            <li><a href="hmva-care.html">HMVA Care</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Terhubung</h4>
+          <ul>
+            <li><a href="#">Instagram: @hmvaui</a></li>
+            <li><a href="#">LinkedIn: HMVA Vokasi UI</a></li>
+            <li><a href="#">Email: info@hmvaui.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Himpunan Mahasiswa Vokasi Akuntansi Universitas Indonesia. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/calendar.js"></script>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
